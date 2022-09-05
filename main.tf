@@ -10,3 +10,4 @@ provisioner "local-exec" {
 command = <<EOT
 echo $TF_VAR_name
 EOT
+}
