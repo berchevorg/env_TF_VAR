@@ -6,9 +6,8 @@ resource "random_pet" "name" {
  separator = "-"
 }
 
-resource "null_resource" "name" {
+resource "null_resource" "example2" {
   provisioner "local-exec" {
-  command = <<EOT
-  echo $TF_VAR_name
-  EOT
+    command = "echo $name"
+  }
 }
